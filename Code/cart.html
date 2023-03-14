@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Expert </title>
+<link rel="stylesheet" href="styles.css" />
+<link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+        *{
+        padding: 0;
+        margin: 0;
+        }
+        body{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            line-height: 1.15;
+            color: #111
+            ;
+        }
+        #wrapper {
+            max-width: 1170px;
+            margin: 0 auto;
+        }
+        .headline{
+            text-align: center;
+            margin: 40px 0px;
+        }
+
+        h3{
+            font-size: 18px;
+            color: #111;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            border: 1px solid #bebebe;
+            display: inline-block;
+            color:#555;
+            font-weight: 600;
+        }
+        ul.products{
+            list-style: none;
+            display:flex;
+            flex-wrap:wrap;
+            justify-content: space-between;
+        }
+        ul.products li{
+            flex-basis: 25%;
+            padding-left: 15px;
+            padding-right: 15px;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+        }
+        ul.products li img{
+            max-width: 100%;
+            height: auto;
+        }
+        ul.products li .product-top a.buy-now{
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            background-color: #446084;
+            color: #fff;
+            padding: 10px 0px;
+
+        }
+        ul.products li .product-info{
+            padding:10px 0px;
+        }
+        ul.products li .product-info a{
+            display:block;
+            text-decoration: none;
+        }
+        ul.products li .product-info a.product-cat{
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #9e9e9e;
+            padding:3px 0px;
+        }
+        ul.products li .product-info a.product-name{
+            color:#334862;
+            padding: 3px 0px;
+        }
+        ul.products li .product-info .product-price{
+            color:#111;
+            padding:2px 0px;
+            font-weight: 600;
+        }
+        .btremove {
+            background-color: #333;
+            color: white;
+        }
+        #cart-container{
+            overflow-x: auto;
+        }
+        #cart-container table{
+            border-collapse: ;
+            width: 100%;
+            table-layout: :fixed;
+            white-space: nowrap;
+        }
+        #cart-container table thead{
+            font-weight: 700;
+        }
+        #cart-container table thead td{
+         background-color: #fd8c66;
+         color:#fff;
+         border: none;
+         padding: 6px 0; 
+        }
+        #cart-container table td{
+            border:1px solid #b6b3b3;
+            text-align: center;
+        }
+        #cart-container table td:ntn-child(1){
+            width: 100px;
+        }
+        #cart-container table td:ntn-child(2),
+        #cart-container table td:ntn-child(3){
+            width: 200px;
+        }
+        #cart-container table td:ntn-child(4),
+        #cart-container table td:ntn-child(5), 
+        #cart-container table td:ntn-child(6){
+            width: 170px;
+        }
+        #cart-container table tbody img{
+            width: 100px;
+            height: 80px;
+            object-fit: cover;
+        }
+        #cart-bottom .coupon>div,
+        #cart-bottom .total>div{
+            border: 1px solid #b6b3b3;
+        }
+        #cart-bottom .coupon h5,
+        #cart-bottom .total h5{
+            background: #fd8c66;
+            color: #fff;
+            border: none;
+            padding: 6px 12px;
+            font-weight: 700;
+        }
+        #cart-bottom .coupon p,
+        #cart-bottom .coupon input{
+            padding: 0 12px;
+        }
+        #cart-bottom .coupon input{
+            height: 44px;
+        }
+        #cart-bottom .coupon input,
+        #cart-bottom .coupon input button{
+            margin: 0 0 20px 12px;
+        }
+        #cart-bottom .total div>div{
+            padding: 0 12px;
+        }
+        #cart-bottom .total h6{
+            color: #2a2a2a;
+        }
+        .second-hr{
+            background: #b8b7b3;
+            width: 100%;
+            height: 1px;
+        }
+        #cart-bottom .total div>button{
+            margin: 0 12px 20px 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+    </style>
+     <header class="header" id="header">
+        <div class="navigation">
+          <div class="nav-center container d-flex">
+            <a href="index.html" class="logo"><img src="images/logo.jpg"></a>
+            <ul class="nav-list d-flex">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="product.html" class="nav-link">Antique</a>
+              </li>
+              <li class="nav-item">
+                <a href="auction.html" class="nav-link">Auction</a>
+              </li>
+              <li class="nav-item">
+                <a href="expert.html" class="nav-link">Expert</a>
+              </li>
+              <li class="nav-item">
+                <a href="cart.html" class="nav-link">Cart</a>
+              </li>
+            </ul>
+            <div class="hamburger">
+                <i class="bx bx-menu-alt-left"></i>
+              </div>
+            </div>
+          </div>
+    <div id="wrapper">
+        <div class="headline">
+            <h3>Cart</h3>
+        </div>
+    <section id="cart-container" class="container cart">
+         <table width="100%">
+           <thead>
+            <tr>
+                <td>Remove</td>
+                <td>Image</td>
+                <td>Product</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td>Total</td>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+                <td><a href=""><button class="btremove">Remove</button></a></td>
+                <td><img src="images/antique1.jpg"></td>
+                <td><h5>Tiffany beauty lamp</h5></td>
+                <td><h5>600$</h5></td>
+                <td><input class="w-25 pl-1" value="1" type="number"></td>
+                <td><h5>$600</h5></td>
+            </tr>
+            <tr>
+                <td><a href=""><button class="btremove">Remove</button></a></td>
+                <td><img src="images/antique2.jpg"></td>
+                <td><h5>Beauty lamp 1900</h5></td>
+                <td><h5>500$</h5></td>
+                <td><input class="w-25 pl-1" value="1" type="number"></td>
+                <td><h5>500$</h5></td>
+            </tr>
+            <tr>
+                <td><a href=""><button class="btremove">Remove</button></a></td>
+                <td><img src="images/antique3.jpg"></td>
+                <td><h5>Clock antique</h5></td>
+                <td><h5>4.000$</h5></td>
+                <td><input class="w-25 pl-1" value="1" type="number"></td>
+                <td><h5>4.000$</h5></td>
+            </tr>
+           </tbody>
+         </table>
+    </section>
+    <section id="cart-bottom" class="container">
+        <div class="row">
+            <div class="coupon col-lg-6 col-md-6 col-12 mb-4">
+                <h5>COUPON</h5>
+                <p>Enter your coupon antique code if store gave you</p>
+                <input type="text" placeholder="Coupon Code">
+                <button>Apply Coupon</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="total col-lg-6 col-md-6 col-12">
+                <h5>CART TOTAL</h5>
+                <div class="d-flex justify-content-between">
+                    <h6>Subtotal</h6>
+                    <p>5.100$</p>
+                </div> 
+                <div class="d-flex justify-content-between">
+                    <h6>Shipping</h6>
+                    <p>50$</p>
+                </div> 
+                <hr class="second-hr">
+                <div class="d-flex justify-content-between">
+                    <h6>Total</h6>
+                    <p>5.150$</p>
+                </div> 
+                <button class="ml-auto">Proceed to checkout</button>
+            </div>
+        </div>
+    </section>
+        
+    <footer class="footer">
+        <div class="row">
+          <div class="col d-flex">
+            <h4>INFORMATION</h4>
+            <a href="">Auction</a>
+            <a href="">Expert</a>
+            <a href="">Antique</a>
+            <a href="">Contact Us</a>
+            <a>Ta Quang Buu, HaNoi, VietNam</a>
+          </div>
+  
+          <div class="col d-flex">
+            <span><i class="bx bxl-facebook-square"></i></span>
+            <span><i class="bx bxl-instagram-alt"></i></span>
+            <span><i class="bx bxl-github"></i></span>
+            <span><i class="bx bxl-twitter"></i></span>
+            <span><i class="bx bxl-pinterest"></i></span>
+          </div>
+        </div>
+      </footer>
+    </body>
+  </html>

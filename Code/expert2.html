@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Product details </title>
+<link rel="stylesheet" href="styles.css" />
+<link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+        *{
+        padding: 0;
+        margin: 0;
+        }
+        body{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            line-height: 1.15;
+            color: #111
+            ;
+        }
+        #wrapper {
+            max-width: 1170px;
+            margin: 0 auto;
+        }
+        .headline{
+            text-align: center;
+            margin: 40px 0px;
+        }
+
+        h3{
+            font-size: 18px;
+            color: #111;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            border: 1px solid #bebebe;
+            display: inline-block;
+            color:#555;
+            font-weight: 600;
+        }
+        ul.products{
+            list-style: none;
+            display:flex;
+            flex-wrap:wrap;
+            justify-content: space-between;
+        }
+        ul.products li{
+            padding-left: 15px;
+            padding-right: 15px;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+        }        
+        .content{
+            width:960px;
+            margin: 0px;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .text-center img{
+            width: 600px;
+        }
+        .information{
+            padding-left: 100px;
+            margin-top: 50px;
+            margin-bottom:50px;
+        }
+        .information p{
+            line-height: 2;
+            font-size: medium;
+        }
+        .addtocart{
+          background-color: rgb(230, 184, 198);
+          color: rgb(255, 2, 2);
+          margin-left: 100px;
+        }
+
+    </style>
+     <header class="header" id="header">
+        <div class="navigation">
+          <div class="nav-center container d-flex">
+            <a href="index.html" class="logo"><img src="images/logo.jpg"></a>
+            <ul class="nav-list d-flex">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="product.html" class="nav-link">Antique</a>
+              </li> 
+              <li class="nav-item">
+                <a href="auction.html" class="nav-link">Auction</a>
+              </li>
+              <li class="nav-item">
+                <a href="expert.html" class="nav-link">Expert</a>
+              </li>
+              <li class="nav-item">
+                <a href="cart.html" class="nav-link">Cart</a>
+              </li>
+            </ul>
+            <div class="hamburger">
+                <i class="bx bx-menu-alt-left"></i>
+              </div>
+            </div>
+          </div>
+    <div id="wrapper">
+        <div class="headline">
+            <h3>Profile </h3>
+        </div>
+    <div id="content">
+        <div class="text-center">
+            <img src="images/expert2.jpg" alt="" class="">  
+        </div>
+        <div class="information">
+            <h1>Caroline</h1>
+            <p></p>
+            <p>Type: 10  years of experience</p>
+            <p>Description:</p>
+            <p> 10 years of experience. 10 years of experie. vnce. 10 years of experience. 10 years of experience. 10 years of experience. 10 years of experience. 10 years of experience
+            <p>
+              Phone number: 2312361312
+              Email: caroline@gmail.com
+              </p>
+        </div>
+    </div>    
+    <button class="addtocart">
+      <span>Contact</span>
+    </button>
+    
+    <footer class="footer">
+      <div class="row">
+        <div class="col d-flex">
+          <h4>INFORMATION</h4>
+          <a href="">Auction</a>
+          <a href="">Expert</a>
+          <a href="">Antique</a>
+          <a href="">Contact Us</a>
+          <a>Ta Quang Buu, HaNoi, VietNam</a>
+        </div>
+
+        <div class="col d-flex">
+          <span><i class="bx bxl-facebook-square"></i></span>
+          <span><i class="bx bxl-instagram-alt"></i></span>
+          <span><i class="bx bxl-github"></i></span>
+          <span><i class="bx bxl-twitter"></i></span>
+          <span><i class="bx bxl-pinterest"></i></span>
+        </div>
+      </div>
+    </footer>
+      </html>

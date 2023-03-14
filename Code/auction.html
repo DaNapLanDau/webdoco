@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Auction </title>
+<link rel="stylesheet" href="styles.css" />
+<link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+        *{
+        padding: 0;
+        margin: 0;
+        }
+        body{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            line-height: 1.15;
+            color: #111
+            ;
+        }
+        #wrapper {
+            max-width: 1170px;
+            margin: 0 auto;
+        }
+        .headline{
+            text-align: center;
+            margin: 40px 0px;
+        }
+
+        h3{
+            font-size: 18px;
+            color: #111;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            border: 1px solid #bebebe;
+            display: inline-block;
+            color:#555;
+            font-weight: 600;
+        }
+        ul.products{
+            list-style: none;
+            display:flex;
+            flex-wrap:wrap;
+            justify-content: space-between;
+        }
+        ul.products li{
+            flex-basis: 25%;
+            padding-left: 15px;
+            padding-right: 15px;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+        }
+        ul.products li img{
+            max-width: 100%;
+            height: auto;
+        }
+        ul.products li .product-top a.buy-now{
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            background-color: #446084;
+            color: #fff;
+            padding: 10px 0px;
+
+        }
+        ul.products li .product-info{
+            padding:10px 0px;
+        }
+        ul.products li .product-info a{
+            display:block;
+            text-decoration: none;
+        }
+        ul.products li .product-info a.product-cat{
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #9e9e9e;
+            padding:3px 0px;
+        }
+        ul.products li .product-info a.product-name{
+            color:#334862;
+            padding: 3px 0px;
+        }
+        ul.products li .product-info .product-price{
+            color:#111;
+            padding:2px 0px;
+            font-weight: 600;
+        }
+    </style>
+     <header class="header" id="header">
+        <div class="navigation">
+          <div class="nav-center container d-flex">
+            <a href="#" class="logo"><img src="images/logo.jpg"></a>
+            <ul class="nav-list d-flex">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="product.html" class="nav-link">Antique</a>
+              </li>
+              <li class="nav-item">
+                <a href="auction.html" class="nav-link">Auction</a>
+              </li>
+              <li class="nav-item">
+                <a href="expert.html" class="nav-link">Expert</a>
+              </li>
+              <li class="nav-item">
+                <a href="cart.html" class="nav-link">Cart</a>
+              </li>
+            </ul>
+            <div class="hamburger">
+                <i class="bx bx-menu-alt-left"></i>
+              </div>
+            </div>
+          </div>
+    <div id="wrapper">
+        <div class="headline">
+            <h3>Auction</h3>
+        </div>
+        <ul class="products">
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="./images/auction1.jpg" alt="" class="">
+                        </a>
+                    <a href="auction1.html" class="buy-now">Buy now</a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Picture</a>
+                        <a href="" class="product-name">
+                            Francis Holman 1729
+                        </a>
+                        <div class="product-price">125.000$</div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="./images/auction2.jpg" alt="" class="">
+                        </a>
+                        <a href="auction2.html" class="buy-now">Auction</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Statue</a>
+                        <a href="" class="product-name">
+                            Auguste Rodin
+                        </a>
+                        <div class="product-price">50.000$</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="./images/auction3.jpg" alt="" class="">
+                        </a>
+                        <a href="auction3.html" class="buy-now">Auction</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Pciture</a>
+                        <a href="" class="product-name">
+                            Old Famous Picture
+                        </a>
+                        <div class="product-price">17.000$</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="./images/auction4.jpg" alt="" class="">
+                        </a>
+                        <a href="auction4.html" class="buy-now">Auction</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Disk</a>
+                        <a href="" class="product-name">
+                            Property of lady
+                        </a>
+                        <div class="product-price">40.000$</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="./images/auction5.jpg" alt="" class="">
+                        </a>
+                        <a href="auction5.html" class="buy-now">Auction</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Picture</a>
+                        <a href="" class="product-name">
+                            Marry Fedden OBE
+                        </a>
+                        <div class="product-price">60.000$</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="./images/auction6.jpg" alt="" class="">
+                        </a>
+                        <a href="auction6.html" class="buy-now">Auction</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Tea pot</a>
+                        <a href="" class="product-name">
+                            Picasso, Pablo 1881
+                        </a>
+                        <div class="product-price">56.000$</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="./images/auction7.jpg" alt="" class="">
+                        </a>
+                        <a href="auction7.html" class="buy-now">Auction</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Picture</a>
+                        <a href="" class="product-name">
+                            Grindall Seaman
+                        </a>
+                        <div class="product-price">8.000$</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="./images/auction8.jpg" alt="" class="">
+                        </a>
+                        <a href="auction8.html" class="buy-now">Auction</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Item</a>
+                        <a href="" class="product-name">
+                            Oceanic 1941
+                        </a>
+                        <div class="product-price">25.000$</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <footer class="footer">
+        <div class="row">
+          <div class="col d-flex">
+            <h4>INFORMATION</h4>
+            <a href="">Auction</a>
+            <a href="">Expert</a>
+            <a href="">Antique</a>
+            <a href="">Contact Us</a>
+            <a>Ta Quang Buu, HaNoi, VietNam</a>
+          </div>
+  
+          <div class="col d-flex">
+            <span><i class="bx bxl-facebook-square"></i></span>
+            <span><i class="bx bxl-instagram-alt"></i></span>
+            <span><i class="bx bxl-github"></i></span>
+            <span><i class="bx bxl-twitter"></i></span>
+            <span><i class="bx bxl-pinterest"></i></span>
+          </div>
+        </div>
+      </footer>
+    </body>
+  </html>
