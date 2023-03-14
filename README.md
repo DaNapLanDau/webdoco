@@ -4,3 +4,4 @@
 <p> người dùng có thể xem thông tin sản phẩm đồ cổ đang bán (antique), đồ đấu giá (auction) </p>
 <p>trang cart để xem các sản phẩm đã chọn mua,</p>
 <p>có trang thông tin của các chuyên gia đồ cổ để liên hệ</p>
+<p> Cảm ơn anh/chị đã quan tâm !</p>
